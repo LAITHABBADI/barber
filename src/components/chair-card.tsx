@@ -16,7 +16,13 @@ function formatTime(date?: Date) {
   return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
-export function ChairCard({ chair }: { chair: Chair }) {
+export function ChairCard({
+  chair,
+  onBookNow,
+}: {
+  chair: Chair;
+  onBookNow: (chair: Chair) => void;
+}) {
   const isAvailable = chair.status === "available";
 
   return (
@@ -68,7 +74,11 @@ export function ChairCard({ chair }: { chair: Chair }) {
       </CardContent>
       <CardFooter>
         {isAvailable ? (
-          <Button size="sm" className="w-full">
+          <Button
+            size="sm"
+            className="w-full"
+            onClick={() => onBookNow(chair)}
+          >
             Book Now
           </Button>
         ) : (

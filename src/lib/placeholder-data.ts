@@ -1,3 +1,14 @@
+export type Service = {
+  id: string;
+  name: string;
+  duration: number; // in minutes
+};
+
+export type Stylist = {
+  id: string;
+  name: string;
+};
+
 export type Chair = {
   id: string;
   name: string;
@@ -7,6 +18,19 @@ export type Chair = {
   service?: string;
   endTime?: Date;
 };
+
+export const stylists: Stylist[] = [
+  { id: "1", name: "Alex" },
+  { id: "2", name: "Maria" },
+  { id: "3", name: "Sam" },
+];
+
+export const services: Service[] = [
+  { id: "1", name: "Haircut", duration: 45 },
+  { id: "2", name: "Haircut & Color", duration: 120 },
+  { id: "3", name: "Styling", duration: 30 },
+  { id: "4", name: "Beard Trim", duration: 20 },
+];
 
 export const chairs: Chair[] = [
   { id: "1", name: "Chair 1", status: "available" },
