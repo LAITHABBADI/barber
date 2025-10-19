@@ -4,7 +4,10 @@ import {
   Calendar,
   Users,
   Scissors,
-  Package2,
+  List,
+  DollarSign,
+  CreditCard,
+  BarChart,
 } from "lucide-react";
 
 export function Sidebar() {
@@ -14,7 +17,7 @@ export function Sidebar() {
         <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Scissors className="h-6 w-6" />
-            <span className="">SalonApp</span>
+            <span className="">BarberPro</span>
           </Link>
         </div>
         <div className="flex-1">
@@ -31,21 +34,49 @@ export function Sidebar() {
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <Calendar className="h-4 w-4" />
-              Bookings
+              Appointments
             </Link>
             <Link
               href="#"
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <Users className="h-4 w-4" />
-              Clients
+              Customers
             </Link>
             <Link
               href="#"
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
             >
               <Scissors className="h-4 w-4" />
-              Staff
+              Barbers
+            </Link>
+            <Link
+              href="#"
+              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+            >
+              <List className="h-4 w-4" />
+              Services
+            </Link>
+            <Link
+              href="#"
+              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+            >
+              <DollarSign className="h-4 w-4" />
+              Finances
+            </Link>
+            <Link
+              href="#"
+              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+            >
+              <CreditCard className="h-4 w-4" />
+              Expenses
+            </Link>
+            <Link
+              href="#"
+              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+            >
+              <BarChart className="h-4 w-4" />
+              Reports
             </Link>
           </nav>
         </div>

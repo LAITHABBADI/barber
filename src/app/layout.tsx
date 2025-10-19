@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SalonApp",
-  description: "Modern Salon Management",
+  title: "BarberPro Management Suite",
+  description: "Barber Shop Management Suite",
 };
 
 export default function RootLayout({

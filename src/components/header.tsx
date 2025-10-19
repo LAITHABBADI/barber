@@ -6,6 +6,10 @@ import {
   LayoutDashboard,
   Calendar,
   Users,
+  List,
+  DollarSign,
+  CreditCard,
+  BarChart,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -36,7 +40,7 @@ export function Header() {
               className="flex items-center gap-2 text-lg font-semibold mb-4"
             >
               <Scissors className="h-6 w-6" />
-              <span className="">SalonApp</span>
+              <span className="">BarberPro</span>
             </Link>
             <Link
               href="#"
@@ -50,21 +54,49 @@ export function Header() {
               className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
             >
               <Calendar className="h-5 w-5" />
-              Bookings
+              Appointments
             </Link>
             <Link
               href="#"
               className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
             >
               <Users className="h-5 w-5" />
-              Clients
+              Customers
             </Link>
             <Link
               href="#"
               className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
             >
               <Scissors className="h-5 w-5" />
-              Staff
+              Barbers
+            </Link>
+            <Link
+              href="#"
+              className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            >
+              <List className="h-5 w-5" />
+              Services
+            </Link>
+            <Link
+              href="#"
+              className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            >
+              <DollarSign className="h-5 w-5" />
+              Finances
+            </Link>
+            <Link
+              href="#"
+              className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            >
+              <CreditCard className="h-5 w-5" />
+              Expenses
+            </Link>
+            <Link
+              href="#"
+              className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+            >
+              <BarChart className="h-5 w-5" />
+              Reports
             </Link>
           </nav>
         </SheetContent>
